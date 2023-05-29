@@ -1,0 +1,3194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WIBUSHOP - WEBSITE BÁN MÔ HÌNH </title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Theo dõi WIBUSHOP.</h3>
+
+            <p class="newsletter-desc">
+              Theo dõi WIBUSHOP để nhận được thông báo mỗi khi có sản phẩm mới, những ưu đãi lớn đến từ chúng tôi và một lượt rút thăm trúng thưởng những phần quà hấp dẫn.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Điền email để nhận thông báo..." required>
+
+          <button type="submit" class="btn-newsletter">Theo dõi</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/jewellery-1.jpg" alt="Mô hình figure: Yoshino Kimono" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Ai đó vừa trúng giải may mắn
+      </p>
+
+      <p class="toast-title">
+        Mô hình figure: Yoshino Kimono
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 phút trước</time>
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Miễn phí giao hàng</b>
+            Chỉ trong tuần này với hoá đơn trên - 1.000.000 VND
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="vnd" >VND đ  </option>
+            <option value="usd">USD &dollar;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">Tiếng việt</option>
+            <option value="es-ES">English</option>
+            <!--   <option value="fr">Fran&ccedil;ais</option> -->
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Nhập tên sản phẩm bạn muốn tìm...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Trang chủ</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Thể loại</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Figure</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mini Figure</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Bộ Figure</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Figma & action Figure</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Xu hướng Figure</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Giới thiệu Figure</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Nendoroid</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Nhân vật Anime</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Nhân vật Game</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Nhân vật Vocaloid</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Nhân vật Movie</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Nhân vật Nguyên bản</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Cosplay</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Trang phục</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Phụ kiện</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Combo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Sự kiện</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Xu hướng</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Anime</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dragon Ball</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">One Piece</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Kimetsu No Yaiba</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Genshin Impact</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Date A Live</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Figure</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Mini</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bộ</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Anime</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">DC & Marvel</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Nendoroid</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Anime</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Game</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Nguyên bản</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Đặc biệt</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Cosplay</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Trang phục</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Sự kiện</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Combo</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Nổi bật</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Anime</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Dragon Ball</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Naruto</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">One Piece</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Kimetsu No Yaiba</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Xu hướng</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Top sản phẩm</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Trang chủ</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Thể loại</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Figure</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Nendoroid</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Cosplay</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Khác</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Figure</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mini</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bộ</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Anime</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">DC & Marvel</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Nendoroid</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Anime</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Game</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Nguyên bản</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Đặc biệt</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Cosplay</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Trang phục</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Phụ kiện</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Combo</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Nổi bật</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Anime</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Xu hướng</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Ngôn ngữ</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Tiếng Việt</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Tiền tệ
+              </p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">VND đ</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Khuyến mãi</p>
+
+              <h2 class="banner-title">ONE PIECE</h2>
+
+              <p class="banner-text">
+                Giảm giá 20% kỉ niệm 10 năm
+              </p>
+
+              <a href="#" class="banner-btn">Mua ngay</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-2.jpg" alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Sản phẩm xu hướng</p>
+
+              <h2 class="banner-title">Kimetsu No Yaiba</h2>
+
+              <p class="banner-text">
+                Giảm giá 10% cho hoá đơn trên 200.000 VND
+              </p>
+
+              <a href="#" class="banner-btn">Mua ngay</a>
+
+            </div>
+
+          </div>
+
+          
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/1.jpg" alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">One Piece</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Xem thêm</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/2.jpg" alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Dragon ball</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Xem thêm</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/3.jpg" alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Kimetsu No Yaiba</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Xem thêm</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/4.jpg" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Genshin Impact</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Xem thêm</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/5.jpg" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Mavel</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Xem thêm</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/6.jpg" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Naruto</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Xem thêm</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/7.jpg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Final Fantasy</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Xem thêm</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/8.jpg" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Date A Live</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Xem thêm</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Sản phẩm</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    
+
+                    <p class="menu-title">Figure</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Mini Figure</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bộ Figure</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Figma & Action</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Giới Hạn</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    
+
+                    <p class="menu-title">Nendoroid</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Anime</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Game</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Vocaloid</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Movie</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    
+
+                    <p class="menu-title">Cosplay</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Trang Phục</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Phụ kiện</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Combo</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">Bán chạy</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/1.jpg" alt="Mô hình figure: Kaneki Ken Ngồi – 2 Mặt
+                    " width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Mô hình figure: Kaneki Ken Ngồi – 2 Mặt
+                      </h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>1.500.000 VND</del>
+                      <p class="price">990.000 VND</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/2.jpg" alt="Mô hình figure: Odile – Tím Than" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Mô hình figure: Odile – Tím Than</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>1.090.000 VND</del>
+                      <p class="price">790.000 VND</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="Mô hình figure set: Boa Hancock Cầm Cung & Rắn Salome
+                    " width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Mô hình figure set: Boa Hancock Cầm Cung & Rắn Salome
+                      </h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>1.450.000 VND</del>
+                      <p class="price">900.000 VND</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/4.jpg" alt="Mô hình figure set: Hợp Thể Super Saiyan Vegeta & Son Goku Thành Gogeta Vol.1" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Mô hình figure set: Hợp Thể Super Saiyan Vegeta & Son Goku Thành Gogeta Vol.1</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>650.000 VND</del>
+                      <p class="price">400.000 VND</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">Hàng Mới</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hangmoi-1.jpg" alt="Mô hình figure set: One Piece Bộ 10 Con" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure set: One Piece Bộ 10 Con</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">One Piece</a>
+
+                      <div class="price-box">
+                        <p class="price">450.000 VND</p>
+                        <del>600.000 VND</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hangmoi-2.jpg" alt="Mô hình figure set: Sabo & Luffy & Ace – DXF Brotherhood II – One Piece Bộ 3 Con" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure set: Sabo & Luffy & Ace – DXF Brotherhood II – One Piece Bộ 3 Con</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">One Piece</a>
+                  
+                      <div class="price-box">
+                        <p class="price">490.000 VND</p>
+                        <del>700.000 VND</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hangmoi-3.jpg" alt="Mô hình figure set: Naruto Bộ 6 Con – 2 Naruto" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure set: Naruto Bộ 6 Con – 2 Naruto</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Naruto</a>
+                  
+                      <div class="price-box">
+                        <p class="price">399.000 VND</p>
+                        <del>500.000 VND</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hangmoi-4.jpg" alt="Mô hình figure set: Spy x Family Bộ 4 Con" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure set: Spy x Family Bộ 4 Con</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Spy x Family</a>
+                  
+                      <div class="price-box">
+                        <p class="price">250.000 VND</p>
+                        <del>400.000 VND</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hangmoi-5.jpg" alt="Mô hình figure set: Sabo & Luffy & Ace – DXF Brotherhood II – One Piece Bộ 3 Con" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure set: Sabo & Luffy & Ace – DXF Brotherhood II – One Piece Bộ 3 Con</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">One Piece</a>
+                
+                      <div class="price-box">
+                        <p class="price">460.000 VND</p>
+                        <del>600.000 VND</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hangmoi-6.jpg" alt="Figure set: Naruto Bộ 6 Con Cưỡi Thú" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Figure set: Naruto Bộ 6 Con Cưỡi Thú</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Naruto</a>
+                
+                      <div class="price-box">
+                        <p class="price">250.000 VND</p>
+                        <del>400.000 VND</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hangmoi-7.jpg" alt="Figure set: Marvel & DC Comics Bộ 6 Con" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Figure set: Marvel & DC Comics Bộ 6 Con</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">DC & MARVEL</a>
+                
+                      <div class="price-box">
+                        <p class="price">300.000 VND</p>
+                        <del>350.000 VND</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hangmoi-8.jpg" alt="Mô hình figure set: Genshin Bộ 6 Con" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure set: Genshin Bộ 6 Con</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Genshin Impact</a>
+                
+                      <div class="price-box">
+                        <p class="price">300.000 VND</p>
+                        <del>400.000 VND</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Xu Hướng</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/xuhuong-1.jpg" alt="Mô hình figure set: Luffy Áo Trắng & Shanks – One Piece Memories" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure set: Luffy Áo Trắng & Shanks – One Piece Memories</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">One Piece</a>
+            
+                      <div class="price-box">
+                        <p class="price">220.000 VND</p>
+                        <del>250.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/xuhuong-2.jpg" alt="Figure set: Ariel & Pocahontas & Cinderella – Công chúa Disney Bộ 3 Con" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Figure set: Ariel & Pocahontas & Cinderella – Công chúa Disney Bộ 3 Con</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Walt Disney</a>
+            
+                      <div class="price-box">
+                        <p class="price">200.000 VND</p>
+                        <del>220.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/xuhuong-3.jpg" alt="Mô hình figure: Hatsune Miku Kimono" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure: Hatsune Miku Kimono</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Vocaloid</a>
+            
+                      <div class="price-box">
+                        <p class="price">445.000 VND</p>
+                        <del>500.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/xuhuong-4.jpg" alt="Mô hình figure: Hatsune Miku Kimono" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure: Hatsune Miku Kimono</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Dragon Ball</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000 VND</p>
+                        <del>200.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/xuhuong-5.jpg" alt="Mô hình figure: Rita Rossweisse – Maid of Celestia" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure: Rita Rossweisse – Maid of Celestia</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Honkai Impact 3</a>
+            
+                      <div class="price-box">
+                        <p class="price">445.000 VND</p>
+                        <del>500.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/xuhuong-6.jpg" alt="Figure: Chunli – The New Challenger TNC03" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Figure: Chunli – The New Challenger TNC03</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Stress Fighter</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000 VND</p>
+                        <del>170.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/xuhuong-7.jpg" alt="Mô hình Figure: Nami – PT" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình Figure: Nami – PT</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">One Piece</a>
+            
+                      <div class="price-box">
+                        <p class="price">360.000 VND</p>
+                        <del>400.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/xuhuong-8.jpg" alt="Mô hình figure: Vegetto 33cm" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure: Vegetto 33cm</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Dragon Ball</a>
+            
+                      <div class="price-box">
+                        <p class="price">600.000 VND</p>
+                        <del>800.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Nổi Bật</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/noibat-1.jpg" alt="Saber Nữ Sinh Áo Khoác Đen – Heroic Spirit Traveling Outfit" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Saber Nữ Sinh Áo Khoác Đen – Heroic Spirit Traveling Outfit</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Fate/Grand Order</a>
+            
+                      <div class="price-box">
+                        <p class="price">355.000 VND</p>
+                        <del>400.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/noibat-2.jpg" alt="Hashibira Inosuke Nằm" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Hashibira Inosuke Nằm</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Kimetsu No Yaiba</a>
+            
+                      <div class="price-box">
+                        <p class="price">225.000 VND</p>
+                        <del>250.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/noibat-3.jpg" alt="Boa Hancock – Kimono Hồng" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Boa Hancock – Kimono Hồng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">One Piece</a>
+            
+                      <div class="price-box">
+                        <p class="price">350.000 VND</p>
+                        <del>370.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/noibat-4.jpg" alt="Naruto Uzumaki – Vibration Stars" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Naruto Uzumaki – Vibration Stars</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Naruto</a>
+            
+                      <div class="price-box">
+                        <p class="price">450.000 VND</p>
+                        <del>500.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/noibat-5.jpg" alt="Marco POP DX MAS" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Marco POP DX MAS</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">One Piece</a>
+            
+                      <div class="price-box">
+                        <p class="price">290.000 VND</p>
+                        <del>310.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/noibat-6.jpg" alt="Kamado Tanjirou – Dàn Trận" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Kamado Tanjirou – Dàn Trận</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Kimetsu No Yaiba</a>
+            
+                      <div class="price-box">
+                        <p class="price">250.000 VND</p>
+                        <del>300.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/noibat-7.jpg" alt="Mô hình figure: Sora Ngồi Chéo Chân – Kimono Xám" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mô hình figure: Sora Ngồi Chéo Chân – Kimono Xám</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Yosuga no Sora</a>
+            
+                      <div class="price-box">
+                        <p class="price">510.000 VND</p>
+                        <del>600.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/noibat-8.jpg" alt="Golden Darkness – Yukata Ver" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Golden Darkness – Yukata Ver</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">To Love-Ru</a>
+            
+                      <div class="price-box">
+                        <p class="price">320.000 VND</p>
+                        <del>350.000 VND</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Yêu Thích Đặc Biệt</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/yeuthichdb-1.jpg" alt="Mô hình figure: Catgirl Mia" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Mô hình figure: Catgirl Mia</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Cao khoảng 14cm,
+                      Nhựa PVC,
+                      Nặng 0.3kg,
+                      Kích thước hộp: 20x17x30.5cm.
+
+
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">500.000 VND</p>
+
+                      <del>1.000.000 VND</del>
+                    </div>
+
+                    <button class="add-cart-btn">mua ngay</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/yeuthichdb-2.jpg" alt="Mô hình figure: Albedo Ôm Gối" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Mô hình figure: Albedo Ôm Gối</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Cao khoảng 12cm,
+                      Nhựa PVC,
+                      Nặng khoảng 0.5kg,
+                      Kích thước hộp: 21x18x30cm,
+                      Mô hình tĩnh, không cử động khớp,
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">750.000 VND</p>
+                      <del>1.200.000 VND</del>
+                    </div>
+              
+                    <button class="add-cart-btn">mua ngay</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">Sản Phẩm Ưu Đãi</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/uudai11.jpg" alt="Luffy Gear 5 Đứng Trên Rồng – Tóc Trắng – Đèn" width="300" class="product-img default">
+                  <img src="./assets/images/products/uudai12.jpg" alt="Luffy Gear 5 Đứng Trên Rồng – Tóc Trắng – Đèn" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Luffy Gear 5 Đứng Trên Rồng – Tóc Trắng – Đèn</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Cao khoảng 34cm
+                      Nhựa PVC
+                      Nặng khoảng 1.5kg</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">1.270.000 VND</p>
+                    <del>1.500.000 VND</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/uudai21.jpg" alt="Mô hình figure: Klee Giơ 1 Tay" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/uudai22.jpg" alt="Mô hình figure: Klee Giơ 1 Tay" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Mô hình figure: Klee Giơ 1 Tay</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Cao khoảng 16cm
+                      Nhựa PVC,
+                      Nặng 0.2kg</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">345.000 VND</p>
+                    <del>500.000 VND</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/uudai31.jpg" alt="Mô hình figure: Tanjiro Kamado – Sóng Biển" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/uudai32.jpg" alt="Mô hình figure: Tanjiro Kamado – Sóng Biển" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Mô hình figure: Tanjiro Kamado – Sóng Biển</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Cao khoảng 17-20.5cm
+                      Nhựa PVC
+                      Nặng 0.7kg</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">650.000 VND</p>
+                    <del>700.000 VND</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/uudai41.jpg" alt="Mô hình figure: Charlotte Katakuri Tay Biến Hình" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/uudai42.jpg" alt="Mô hình figure: Charlotte Katakuri Tay Biến Hình" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">new</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Mô hình figure: Charlotte Katakuri Tay Biến Hình</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Cao khoảng 23cm
+                      Nhựa PVC
+                      Nặng khoảng 0.5kg</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">720.000 VND</p>
+                    <del>800.000 VND</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/uudai51.jpg" alt="Mô hình figure: Super Saiyan Blue Vegetto 33cm" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/uudai52.jpg" alt="Mô hình figure: Super Saiyan Blue Vegetto 33cm" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Mô hình figure: Super Saiyan Blue Vegetto 33cm</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Cao khoảng 33cm
+                      Nhựa PVC
+                      Nặng 1kg</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">900.000 VND</p>
+                    <del>950.000 VND</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/uudai61.jpg" alt="Mô hình figure: Dark Dragoon Forte – Forte The Devoted" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/uudai62.jpg" alt="Mô hình figure: Dark Dragoon Forte – Forte The Devoted" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Mô hình figure: Dark Dragoon Forte – Forte The Devoted</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Nhân vật: Dark Dragoon Forte
+                      Game: Rage of Bahamut
+                      Cao khoảng 24.5cm
+                      </a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">750.000 VND</p>
+                    <del>1.000.000 VND</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/uudai71.jpg" alt="Mô hình figure: Super Saiyan 4 Son Goku" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/uudai72.jpg" alt="Mô hình figure: Super Saiyan 4 Son Goku" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Mô hình figure: Super Saiyan 4 Son Goku</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Cao khoảng 26cm
+                      Nhựa PVC
+                      Kích thước hộp: 18.5x14x31cm</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">699.000 VND</p>
+                    <del>800.000 VND</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/uudai81.jpg" alt="Mô hình figure: Nezuko Kamado Hóa Trang Inosuke" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/uudai82.jpg" alt="Mô hình figure: Nezuko Kamado Hóa Trang Inosuke" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Mô hình figure: Nezuko Kamado Hóa Trang Inosuke</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Cao khoảng 17cm
+                      Nhựa PVC
+                      Kích thước hộp: 18×11.5x22cm</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">800.000 VND</p>
+                    <del>1.300.000 VND</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">Cảm nhận</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/ava.jpg" alt="Ma Phong Ba" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Ma Phong Ba</p>
+
+              <p class="testimonial-title">Youtuber & 
+                Content Creator</p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Tôi có một trải nghiệm tuyệt vời với những mô hình được bán tại WIBUSHOP. 
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/nengiamgia.jpg" alt="summer collection" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">Giảm giá 25%</p>
+
+              <h2 class="cta-title">Cho bộ sưu tập Anime</h2>
+
+              <p class="cta-text">Bắt đầu từ hôm nay</p>
+
+              <button class="cta-btn">Mua ngay</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Dịch Vụ</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Miễn phí giao hàng toàn quốc</h3>
+                  <p class="service-desc">Với hoá đơn trên 1.000.000 VND</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Chuẩn bị hàng nhanh chóng</h3>
+                  <p class="service-desc">Xử lí đơn và xuất kho trong một ngày</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Tư vấn hỗ trợ</h3>
+                  <p class="service-desc">Thời gian: 8:00 - 23:00</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Chính sách hoàn trả</h3>
+                  <p class="service-desc">Miễn phí và nhanh chóng</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Thẻ giảm giá</h3>
+                  <p class="service-desc">Nhận thẻ giảm giá cho lần mua sau</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Fashion</a>
+
+              <a href="#">
+                <h3 class="blog-title">Clothes Retail KPIs 2021 Guide for Clothes Executives.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Clothes</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Robin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Shoes</a>
+          
+              <h3>
+                <a href="#" class="blog-title">EBT vendors: Claim Your Share of SNAP Online Revenue.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Selsa</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Electronics</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup Battle.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Pawar</cite> / <time datetime="2022-03-15">Mar 15, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+-->
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Nhân vật ưa thích</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Naruto :</h3>
+
+          <a href="#" class="footer-category-link">Uzumaki Naruto</a>
+          <a href="#" class="footer-category-link">Uchiha Sasuke</a>
+          <a href="#" class="footer-category-link">Hatake Kakashi</a>
+          <a href="#" class="footer-category-link">Haruno Sakura</a>
+          <a href="#" class="footer-category-link">Gaara</a>
+          <a href="#" class="footer-category-link">Namikaze Minato</a>
+          <a href="#" class="footer-category-link">Tsunade</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">One Piece :</h3>
+        
+          <a href="#" class="footer-category-link">Monkey D. Luffy</a>
+          <a href="#" class="footer-category-link">Roronoa Zoro</a>
+          <a href="#" class="footer-category-link">Sanji</a>
+          <a href="#" class="footer-category-link">Nami</a>
+          <a href="#" class="footer-category-link">Nico Robin</a>
+          <a href="#" class="footer-category-link">Shanks</a>
+          <a href="#" class="footer-category-link">Kaido</a>
+          <a href="#" class="footer-category-link">Usopp</a>
+          <a href="#" class="footer-category-link">Tony Tony Chopper</a>
+          <a href="#" class="footer-category-link">Franky</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Dragon Ball :</h3>
+        
+          <a href="#" class="footer-category-link">Son Goku</a>
+          <a href="#" class="footer-category-link">Vegeta</a>
+          <a href="#" class="footer-category-link">Son Gohan</a>
+          <a href="#" class="footer-category-link">Frieza</a>
+          <a href="#" class="footer-category-link">Bulma</a>
+          <a href="#" class="footer-category-link">Krillin</a>
+          <a href="#" class="footer-category-link">Ma Bư</a>
+          <a href="#" class="footer-category-link">Piccolo</a>
+          <a href="#" class="footer-category-link">Quy lão Kamê</a>
+          <a href="#" class="footer-category-link">Trunks</a>
+          <a href="#" class="footer-category-link">Cell</a>
+        </div>
+
+        <!--<div class="footer-category-box">
+          <h3 class="category-box-title">DC & MARVEL :</h3>
+        
+          <a href="#" class="footer-category-link">Shampoo</a>
+          <a href="#" class="footer-category-link">Bodywash</a>
+          <a href="#" class="footer-category-link">Facewash</a>
+          <a href="#" class="footer-category-link">makeup kit</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>
+          <a href="#" class="footer-category-link">prefume</a>
+          <a href="#" class="footer-category-link">Body soap</a>
+          <a href="#" class="footer-category-link">scrub</a>
+          <a href="#" class="footer-category-link">hair gel</a>
+          <a href="#" class="footer-category-link">hair colors</a>
+          <a href="#" class="footer-category-link">hair dye</a>
+          <a href="#" class="footer-category-link">sunscreen</a>
+          <a href="#" class="footer-category-link">skin loson</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>
+        </div> -->
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Phổ biến</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Figure</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Nendoroid</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cosplay</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Sản phẩm</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Ưu đãi</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Hàng mới</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">bán chạy</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">siêu giảm giá</a>
+          </li>
+        
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Công ty </h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Vận chuyển</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Pháp lý</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">điều khoản</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">giới thiệu</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">cổng thanh toán</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Dịch vụ</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Giao hàng</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">xuất hàng</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">tư vấn</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">hoàn trả</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">uy tín</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Liên hệ</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              Ngũ Hành Sơn, Đà Nẵng
+              VKU
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">1900 1999</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">wibushop@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Theo dõi</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Mọi bản quyền thuộc về Copyright &copy; <a href="#">WIBUSHOP</a> 
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
